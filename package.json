@@ -4,7 +4,7 @@
   "description": "\"# cafe-reservation\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "NODE_ENV=development node app.js"
   },
   "author": "indri",
   "license": "ISC",
