@@ -3,7 +3,7 @@
 var express = require('express');
 var app = express();
 var http = require('http');
-var routers = require('./routes/index');
+var router = require('./routes/index');
 
 /**
  * Configs
@@ -23,26 +23,16 @@ app.use(express.static(__dirname + '/public')); // set folder css dan javascript
  * Routes
  */
 
-app.get('/',function(req,res){   // root awal web 
-  res.render(__dirname + '/views/index.ejs');
-});
-
-app.get('/welcome',function(req,res){   // root awal web 
-  res.render(__dirname + '/views/welcome.ejs');
-});
-
+app.use(router);
   
 /**
  * Error Handlers
  */
 
 app.use(function(req, res) {
-  res.send('404: Page not Found', 404);
+  res.status(404).send('404: Page not Found');
 });
 
-app.use(function(error, req, res, next) {
-	res.send(error, 500);
-});
 
 http.createServer(app).listen(app.get('port'),function(){
   console.log('Server Anda jalan menggunakan Port : %s ', app.get('port'));

@@ -4,12 +4,16 @@
   "description": "\"# cafe-reservation\"",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development node app.js"
+    "dev": "NODE_ENV=development nodemon --exec \"node app.js\""
   },
   "author": "indri",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^2.5.7",
     "express": "^4.16.2",
     "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
   }
 }
