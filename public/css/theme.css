@@ -1,0 +1,104 @@
+/*GENERAL LAYOUT*/
+body {
+	font-family: "Lato", Sans-serif;
+	font-size: 14px;
+}
+
+.section {
+	padding-top: 48px;
+}
+
+/*FIGURES*/
+ #figure-margin {
+ 	margin-right: 12px;
+ }
+
+ .figure-caption {
+ 	background-color: #2b303a;
+ }
+
+/*NAVBAR*/
+.nav {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: #2b303a;
+}
+
+.nav-item :not(last-child) {
+	padding-right: 48px;
+}
+
+
+/*MAIN HEADER*/
+.main-header {
+	background-image: url(../img/main-header.jpg);
+	background-size: cover;
+	height: 600px;
+	width: 100%;
+	position: relative;
+}
+
+.main-header-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.btn {
+	background-color: transparent;
+	border-color: #ffffff;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+/*CATEGORIES*/
+.nopadding {
+	height: 400px;
+	padding: 0 !important;
+}
+
+
+/*TYPOGRAPHY*/
+.logo, h2, .reserve, footer h4 {
+	font-family: "Abril Fatface", Sans-serif;
+}
+
+h2 {
+	font-size: 48px;
+}
+
+
+.logo, .reserve {
+	color: #eee5e9;
+	font-size: 24px;
+}
+
+.reserve:hover {
+	background-color: #eee5e9;
+	color: #2b303a;
+}
+.active, h2, .reserve, footer {
+	color: #ffffff;
+}
+
+.nav li a:hover{
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+.notactive {
+	color: #585a5e;
+}
+
+label {
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+/*FOOTER*/
+footer {
+	background-color: #2b303a;
+	padding-bottom: 24px;
+}
