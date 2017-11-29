@@ -2,6 +2,21 @@
 
 <%- include('_nav') %>
 
+<!-- NAVBAR -->
+	<div class="container">
+		<ul class="nav justify-content-center align-items-center fixed-top">
+	  		<li class="nav-item">
+	    		<a class="nav-link active" href="index.html">Home</a>
+	  		</li>
+	  		<li class="nav-item">
+	    		<a class="nav-link logo" href="index.html">LOGO</a>
+	  		</li>
+	  		<li class="nav-item">
+	    		<a class="nav-link notactive" href="reservation-singlepage.html">Reservation</a>
+	  		</li>
+	  	</ul>
+	 </div><!-- end navbar -->
+
   	<!-- MAIN HEADER -->
   	<div class="main-header">
   		<div class="container text-center main-header-caption">
@@ -11,38 +26,40 @@
 	</div><!-- end main-header -->
 
 	<!-- FAST RESERVE FORM -->
-	<form class="form-inline justify-content-center">
-		<div class="form-group">
-			<fieldset>
-				<label for="dateInput" class="text-center col-form-label">Date</label>
+	<div class="container fast-reserve">
+		<form class="form-inline justify-content-center">
+			<div class="form-group">
+				<fieldset>
+					<label for="dateInput" class="text-center col-form-label">Date</label>
+						<div class="col">
+			    			<input class="form-control" type="date" value="" id="dateInput">
+			  			</div>
+			  	</fieldset>
+				<fieldset>
+					<label for="timeInput" class="text-center col-form-label">Time</label>
 					<div class="col">
-		    			<input class="form-control" type="date" value="" id="dateInput">
-		  			</div>
-		  	</fieldset>
-			<fieldset>
-				<label for="timeInput" class="text-center col-form-label">Time</label>
-				<div class="col">
-			    	<input class="form-control" type="time" value="" id="timeInput">
-			  	</div>
-			</fieldset>
-			<fieldset>
-				<div class="col">
-				    <label for="inputSelect" class="col-form-label">Guest</label>
-				    <select class="custom-select">
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-					</select>
-		    	</div>
-		    </fieldset>
-  		</div>
-  		<button class="btn" type="submit">Check Availability</button>
-	</form> <!-- end form -->
+				    	<input class="form-control" type="time" value="" id="timeInput">
+				  	</div>
+				</fieldset>
+				<fieldset>
+					<div class="col">
+					    <label for="inputSelect" class="col-form-label">Guest</label>
+					    <select class="custom-select">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+			    	</div>
+			    </fieldset>
+	  		</div>
+	  		<a href="reservation.html"><button class="btn availability" type="submit">Check Availability</button></a>
+		</form> <!-- end form -->
+	</div>
 
 	<!-- POPULAR SEARCHES -->
-	<div class="container popular-searches section">
+	<div class="container section">
 		<h3 class="text-center">POPULAR SEARCHES</h3>
 		<figure class="figure col-xs" id="figure-margin">
 			<img src="img/popular-searches-1.jpg" class="figure-img img-fluid rounded" alt="Image">
@@ -62,13 +79,20 @@
 		</figure>
 	</div><!-- end popular searches -->
 
-	<div class="container-fluid section">
-		<div class="row">
-			<img class="col-md-4 nopadding" src="img/restaurant.jpg" alt="restaurant">
-			<img class="col-md-4 nopadding" src="img/restaurant.jpg" alt="coffee shop">
-			<img class="col-md-4 nopadding" src="img/snacks.jpg" alt="snacks/dessert">
+	<!-- CATEGORIES -->
+	<div class="row section">
+		<div class="container col-md-4 restaurant" id="categories-container">
+			<h3 class="categories text-center">restaurant</h3>
+			<a href="#"><button type="button" class="btn see">see more</button></a>
 		</div>
-	</div>
-
+		<div class="container col-md-4 coffee" id="categories-container">
+			<h3 class="categories text-center">coffee shop</h3>
+			<a href="#"><button type="button" class="btn see">see more</button></a>
+		</div>
+		<div class="container col-md-4 snacks" id="categories-container">
+			<h3 class="categories text-center">dessert</h3>
+			<a href="#"><button type="button" class="btn see">see more</button></a>
+		</div>
+	</div>  <!-- end categories-->
 <%- include('_footer') %>
 
