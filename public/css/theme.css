@@ -8,6 +8,14 @@ body {
 	padding-top: 48px;
 }
 
+.title {
+	padding-top: 96px;
+}
+
+.single-page {
+	margin-bottom: 48px;
+}
+
 /*FIGURES*/
  #figure-margin {
  	margin-right: 12px;
@@ -18,6 +26,10 @@ body {
  }
 
 /*NAVBAR*/
+.active {
+	text-decoration: underline;
+	
+}
 .nav {
 	padding-top: 12px;
 	padding-bottom: 12px;
@@ -33,7 +45,7 @@ body {
 .main-header {
 	background-image: url(../img/main-header.jpg);
 	background-size: cover;
-	height: 600px;
+	height: 550px;
 	width: 100%;
 	position: relative;
 }
@@ -46,20 +58,103 @@ body {
     font-size: 18px;
 }
 
-.btn {
+/*FAST RESERVE*/
+.fast-reserve{
+	background-color: #eee5e9;
+	position: relative;
+	margin-top: -60px;
+}
+
+.fast-reserve fieldset {
+	padding: 24px 12px;
+}
+
+.reserve {
 	background-color: transparent;
 	border-color: #ffffff;
 	text-transform: uppercase;
 	color: #ffffff;
 }
 
+.availability {
+	background-color: #2b303a;
+	color: #eee5e9;
+}
+
+.availability:hover {
+	background: #eee5e9;
+	color: #2b303a;
+}
+
 /*CATEGORIES*/
+#categories-container {
+	position: relative;
+    width: 50%;
+}
+
+#categories-container:hover {
+	opacity: 0;
+}
+
 .nopadding {
 	height: 400px;
 	padding: 0 !important;
+	background: #eee5e9;
+	opacity: 0.5;
 }
 
+.restaurant {
+	background-image: url(../img/restaurant.jpg);
+}
 
+.snacks {
+	background-image: url(../img/snacks.jpg);
+}
+
+.coffee {
+	background-image: url(../img/coffee-shop.jpg);
+}
+
+.restaurant, .snacks, .coffee {
+	opacity: 0.8;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	display: inline-block;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.see {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: transparent;
+    border:2px solid #2b303a;
+}
+
+.see:hover {
+	opacity: 1;
+}
+
+.categories {
+	background: transparent;
+	text-transform: uppercase;
+	margin: 12px;
+	border: 5px solid rgb(255,255,255);
+	height: 450px;
+	width: auto;
+	position: relative;
+	padding : 200px 0;
+	color: #ffffff;
+}
 /*TYPOGRAPHY*/
 .logo, h2, .reserve, footer h4 {
 	font-family: "Abril Fatface", Sans-serif;
@@ -78,14 +173,17 @@ h2 {
 .reserve:hover {
 	background-color: #eee5e9;
 	color: #2b303a;
+	transition: 0.4 s;
+	overflow: hidden;
 }
 .active, h2, .reserve, footer {
 	color: #ffffff;
 }
 
-.nav li a:hover{
+.nav li a:hover {
 	text-decoration: underline;
 	color: #ffffff;
+
 }
 
 .notactive {
@@ -97,8 +195,22 @@ label {
 	font-size: 18px;
 }
 
+h3 {
+	font-family: "Abril Fatface", Sans-serif;
+	font-size: 36px;
+	color: #2b303a;
+	padding-bottom: 24px;
+	text-transform: uppercase;
+}
+
 /*FOOTER*/
 footer {
 	background-color: #2b303a;
 	padding-bottom: 24px;
+}
+
+/*RESERVATION PAGE*/
+.right-section {
+	background-color: #bdbdbd;
+	padding-left: 96px;
 }
