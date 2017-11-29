@@ -67,7 +67,7 @@
 	 		<div class="right-section col-md-8">
 	 			<h3>reservation</h3>
 	 			<form>
-				  	<div class="form-row justify-content-start">
+				  	<div class="form-row">
 				    	<div class="form-group col-3">
       						<input type="name" class="form-control" id="inputName" placeholder="Name">
     					</div>
@@ -76,30 +76,22 @@
 	    				</div>
   					</div>	
   					<div class="form-row">
-						<fieldset>
-							<div class="col">
-				    			<input class="form-control section-margin" type="date" value="" id="dateInput">
-				  			</div>
-					  	</fieldset>
-					  	<fieldset>
-							<div class="col">
-							    <select class="custom-select">
-							    	<option value="0">Guest</option>
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5</option>
-								</select>
-					    	</div>
-				    	</fieldset>
+						<div class="col-md-4">
+			    			<input class="form-control section-margin" type="date" value="" id="dateInput">
+			  			</div>
+						<div class="col-md-2">
+						    <select class="custom-select">
+						    	<option value="0">Guest</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+				    	</div>
 				    </div>
-					<fieldset>
-						<div class="col-4">
-					    	<input class="form-control" type="time" value="" id="timeInput">
-					  	</div>
-					</fieldset>
-					<textarea class="form-control" id="formControlTextarea" rows="2">Message</textarea>
+				    <input class="form-control col-md-4" type="time" value="" id="timeInput">
+					<textarea class="form-control style-height" id="formControlTextarea" rows="2">Message</textarea>
 				<button type="submit" class="btn">Reserve a Table</button>
 				</form>
 	 		</div>
