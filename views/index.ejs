@@ -2,21 +2,6 @@
 
 <%- include('_nav') %>
 
-<!-- NAVBAR -->
-	<div class="container">
-		<ul class="nav justify-content-center align-items-center fixed-top">
-	  		<li class="nav-item">
-	    		<a class="nav-link active" href="index.html">Home</a>
-	  		</li>
-	  		<li class="nav-item">
-	    		<a class="nav-link logo" href="index.html">LOGO</a>
-	  		</li>
-	  		<li class="nav-item">
-	    		<a class="nav-link notactive" href="reservation-singlepage.html">Reservation</a>
-	  		</li>
-	  	</ul>
-	 </div><!-- end navbar -->
-
   	<!-- MAIN HEADER -->
   	<div class="main-header">
   		<div class="container text-center main-header-caption">
@@ -61,38 +46,51 @@
 	<!-- POPULAR SEARCHES -->
 	<div class="container section">
 		<h3 class="text-center">POPULAR SEARCHES</h3>
-		<figure class="figure col-xs" id="figure-margin">
-			<img src="img/popular-searches-1.jpg" class="figure-img img-fluid rounded" alt="Image">
+		<figure class="figure col-xs hvr-float-shadow" id="figure-margin">
+			<a href="reservation.html"><img src="img/popular-searches-1.jpg" class="figure-img img-fluid rounded" alt="Image"></a>
 			<figcaption class="figure-caption text-center">Klinik Kopi Om Dokter</figcaption>
 		</figure>
-		<figure class="figure col-xs" id="figure-margin">
-			<img src="img/popular-searches-2.jpg" class="figure-img img-fluid rounded" alt="Image">
+		<figure class="figure col-xs hvr-float-shadow" id="figure-margin">
+			<a href="reservation.html"><img src="img/popular-searches-2.jpg" class="figure-img img-fluid rounded" alt="Image"></a>
 			<figcaption class="figure-caption text-center">Warkop 212</figcaption>
 		</figure>
-		<figure class="figure col-xs" id="figure-margin">
-			<img src="img/popular-searches-1.jpg" class="figure-img img-fluid rounded" alt="Image">
+		<figure class="figure col-xs hvr-float-shadow" id="figure-margin">
+			<a href="reservation.html"><img src="img/popular-searches-1.jpg" class="figure-img img-fluid rounded" alt="Image"></a>
 			<figcaption class="figure-caption text-center">Klinik Kopi Om Dokter</figcaption>
 		</figure>
-		<figure class="figure col-xs">
-			<img src="img/popular-searches-2.jpg" class="figure-img img-fluid rounded" alt="Image">
+		<figure class="figure col-xs hvr-float-shadow">
+			<a href="reservation.html"><img src="img/popular-searches-2.jpg" class="figure-img img-fluid rounded" alt="Image"></a>
 			<figcaption class="figure-caption text-center">Warkop 212</figcaption>
 		</figure>
 	</div><!-- end popular searches -->
 
 	<!-- CATEGORIES -->
-	<div class="row section">
-		<div class="container col-md-4 restaurant" id="categories-container">
-			<h3 class="categories text-center">restaurant</h3>
-			<a href="#"><button type="button" class="btn see">see more</button></a>
-		</div>
-		<div class="container col-md-4 coffee" id="categories-container">
-			<h3 class="categories text-center">coffee shop</h3>
-			<a href="#"><button type="button" class="btn see">see more</button></a>
-		</div>
-		<div class="container col-md-4 snacks" id="categories-container">
-			<h3 class="categories text-center">dessert</h3>
-			<a href="#"><button type="button" class="btn see">see more</button></a>
-		</div>
+	<div class="container-fluid">
+	    <div class="row section">
+	        <div class="col-md-4 single-img" >
+	           	<img src="img/restaurant.jpg" alt="restaurant">
+	            <div class="img-overlay text-center">
+	                <h3>restaurant</h3>
+	                <a href="#" class="btn reserve">SEE MORE</a>
+	            </div>
+	        </div>
+	        <div class="col-md-4 single-img">
+	            <img src="img/coffee-shop.jpg" alt="coffee shop">
+	            <div class="img-overlay text-center">
+	                <h3>coffee shop</h3>
+	                <a href="#" class="btn reserve">SEE MORE</a>
+	            </div>
+	        </div>
+	        <div class="col-md-4 single-img">
+	            <img src="img/snacks.jpg" alt="snacks/dessert">
+	            <div class="img-overlay text-center">
+	                <h3>dessert</h3>
+	                <a href="#" class="btn reserve">SEE MORE</a>
+	            </div>
+	        </div>
+	    </div>
 	</div>  <!-- end categories-->
+
+
 <%- include('_footer') %>
 
