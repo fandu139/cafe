@@ -1,0 +1,109 @@
+<%- include('_header') %>
+
+<%- include('_nav') %>
+
+
+	<!-- CAROUSEL -->
+	<div id="carouselExampleIndicators" class="carousel slide section" data-ride="carousel">
+  		<div class="carousel-inner">
+    		<div class="carousel-item active" id="carousel-header">
+				<div class="row active">
+					<img class="d-block w100" src="img/carousel-1.jpg" alt="image">
+					<img class="d-block w100" src="img/carousel-2.jpg" alt="image">
+					<img class="d-block w100" src="img/carousel-3.jpg" alt="image">
+				</div>
+			<div class="carousel-item">
+				<div class="row">
+					<img class="d-block w100" src="img/carousel-1.jpg" alt="image">
+					<img class="d-block w100" src="img/carousel-2.jpg" alt="image">
+					<img class="d-block w100" src="img/carousel-3.jpg" alt="image">
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="row">
+					<img class="d-block w100" src="img/carousel-1.jpg" alt="image">
+					<img class="d-block w100" src="img/carousel-2.jpg" alt="image">
+					<img class="d-block w100" src="img/carousel-3.jpg" alt="image">
+				</div>
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<!-- end carousel -->
+
+	<!-- MENU SECTION -->
+	<div class="container section">
+		<h3 class="text-center">warung kopi</h3>
+		<div class="row menu justify-content-center">
+			<img src="img/menu.jpg" alt="daftar menu">
+			<img src="img/menu.jpg" alt="daftar menu">
+		</div>
+	</div>
+
+
+
+	<!-- RESERVATION SECTION -->
+	<div class="container-fluid section">
+	 	<div class="row">
+	 		<div class="col-md-4 nopadding left-section">
+	 			<div class="content">
+		 			<h5>opening hours</h5>
+		 			<p>09:00 - 22:00</p>
+		 			<h5>address</h5>
+		 			<p>Emi Saelan St, 201</p>
+		 			<h5>phone</h5>
+		 			<p>(0451) 474-47444</p>
+		 			<h5>email</h5>
+		 			<p>info@warungkopi.com</p>
+		 		</div>
+	 		</div>	
+	 		<div class="right-section col-md-8">
+	 			<h3>reservation</h3>
+	 			<form>
+				  	<div class="form-row justify-content-start">
+				    	<div class="form-group col-3">
+      						<input type="name" class="form-control" id="inputName" placeholder="Name">
+    					</div>
+	    				<div class="form-group col-3">
+	      					<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+	    				</div>
+  					</div>	
+  					<div class="form-row">
+						<fieldset>
+							<div class="col">
+				    			<input class="form-control section-margin" type="date" value="" id="dateInput">
+				  			</div>
+					  	</fieldset>
+					  	<fieldset>
+							<div class="col">
+							    <select class="custom-select">
+							    	<option value="0">Guest</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+					    	</div>
+				    	</fieldset>
+				    </div>
+					<fieldset>
+						<div class="col-4">
+					    	<input class="form-control" type="time" value="" id="timeInput">
+					  	</div>
+					</fieldset>
+					<textarea class="form-control" id="formControlTextarea" rows="2">Message</textarea>
+				<button type="submit" class="btn">Reserve a Table</button>
+				</form>
+	 		</div>
+	 	</div>
+	</div><!-- end reservation section -->
+
+<%- include('_footer') %>
